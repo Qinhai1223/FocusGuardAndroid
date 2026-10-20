@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FocusGuard</string>
+    <string name="accessibility_description">Detects foreground app changes to enforce your locally configured focus blocklist. It does not read screen content.</string>
+</resources>
