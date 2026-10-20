@@ -1,3 +1,4 @@
+
 name: Build FocusGuard APK
 
 on:
@@ -24,6 +25,9 @@ jobs:
           gradle-version: '8.9'
 
       - uses: android-actions/setup-android@v3
+
+      - name: Accept Android SDK licenses
+        run: yes | sdkmanager --licenses
 
       - name: Install Android SDK
         run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
